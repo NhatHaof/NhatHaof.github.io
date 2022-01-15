@@ -1,9 +1,7 @@
-/* RESET CSS*/
-
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
@@ -22,15 +20,41 @@ html {
 3. màu sắc
 4. kiểu dáng (kiểu chữ, hình tròn, vuông, ...)
 */
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+
+}
 
 #main {
 
 }
 
-#header {
-    height: 46px;
-    background-color: #000;
 
+/* HEADER */
+#header {
+    /* padding-left: 30px; */
+    background-color: rgb(83, 201, 255);
+    height: 46px;
+    width: 100%;
+    position: sticky;
+    display: flex;
+    top: 0;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+}
+
+#nav {
+    display: inline-block;
+    /* width: 90%; */
+}
+
+#nav img:hover {
+    transform: scale(1.1);
 }
 
 #nav, .subnav {
@@ -41,14 +65,15 @@ html {
     display: inline-block;
 }
 
-#nav li {
-    
-    position: relative;
+#nav li { 
+    position: sticky;
 }
 
 #nav > li > a {
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
+
+
 }
 
 #nav li a {
@@ -56,6 +81,25 @@ html {
     line-height: 46px;
     padding: 0 24px;
     display: block;
+    position: relative;
+}
+
+
+#nav li a::after{
+
+    content: "";
+    width: 0;
+    height: 5px;
+    background: tomato;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#nav li a:hover::after{
+    width: 50%;
+    transform: translate(100%);
 }
 
 #nav li:hover .subnav {
@@ -67,6 +111,7 @@ html {
 #nav .subnav li:hover a {
     color: #000;
     background-color: #ccc;
+    border-radius: 5%;
 }
 
 #nav .subnav {
@@ -74,6 +119,7 @@ html {
     position: absolute;
     top: 100%;
     left: 0;
+    right: 0;
     min-width: 160px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -85,14 +131,168 @@ html {
     line-height: 38px;
 }
 
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .profile-btn {
+    float: right;
+    /* margin-top: -17px; */
+    padding: 0 13px;
+    border-radius: 50%;
+}
+
+#header .profile-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    
+}
+
+#header .profile-icon {
+    color: #000;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#header .search-btn {
+    float: right;
+    /* margin-top: -17px; */
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer; 
+}
+
+#header .search-icon {
+    color: #000;
+    font-size: 20px;
+    line-height: 46px;
+}
+
 #slider {
-    min-height: 500px;
-}
-
-#containt {
+    position: relative;  
+    padding-top: 50%;
 
 }
+
+#slider .img-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width:  auto;
+    /* text-align: center; */
+}
+
+#slider .img-slider img {
+    left: 0;
+    width: 1630px;
+}
+
+#slider .text-content img:hover {
+    /* content: url('http://dummyimage.com/100x100/eb00eb/fff'); */
+}
+#slider .text-heading {
+    font-size: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+
+/* Card-list */
+#slider .cards{
+    display: flex;
+    align-items: stretch;
+    /* margin: -30px;        */
+    margin-bottom: 30px;
+}
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0px;
+    width: calc(25% - 30px);
+    margin: 50px;
+}
+
+
+.card-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content:hover{
+    background: rgb(141, 138, 138);
+    cursor: pointer;
+}
+
+.card-title {
+    font-weight: 500 ;
+    margin-bottom: 25px;
+}
+
+.card-user {
+    display: flex;
+    align-items: center;
+}
+
+.card-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 100em;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.card-info {
+    padding-left: 20px;
+    flex: 1; 
+}
+
+.card-info a {
+    text-decoration: none;
+}
+
+.card-user-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-user-name {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #footer {
-
+    background-color: #000;
+    height: 400px;
+    width: 100%;
 }
