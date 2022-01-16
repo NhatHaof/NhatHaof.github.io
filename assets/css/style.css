@@ -191,9 +191,9 @@ html {
     width: 1630px;
 }
 
-#slider .text-content img:hover {
+/* #slider .text-content img:hover {
     /* content: url('http://dummyimage.com/100x100/eb00eb/fff'); */
-}
+/* } */ 
 #slider .text-heading {
     font-size: 500;
     font-size: 24px;
@@ -263,6 +263,7 @@ html {
 
 .card-info a {
     text-decoration: none;
+
 }
 
 .card-user-top{
