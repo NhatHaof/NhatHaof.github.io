@@ -5,255 +5,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>NVD</title>
+    <!-- boxicon link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <div id="header">
-        <a href="">
-            <img src="./assets/img/logo/logo1.png" alt="NVD-logo" style="height: 50px;
-                    transform: scale(1); transition: all 0.5s; ">
-        </a>
-        <ul id="nav">
 
-            <li><a href="">Trang chủ</a></li>
-            <li><a href="">Khóa học</a></li>
-            <li><a
-                    href="https://luantrum27.github.io/NVDshop/?fbclid=IwAR0Tun30dpUotAdk1xxGk_GIKSHrrMp_80OQt_3OsSHzfB3HKdkelAdbTZ8">
-                    <p>Thiết bị điện tử</p>
-                </a></li>
-            <li><a href="">Tìm kiếm việc làm</a></li>
-            <li><a href="">Dinh dưỡng</a></li>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="./assets/img/logo/logo1.png" width="42px" alt="">
+            <span class="logo_name">NVD</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="">
+                    <i class='bx bx-user'></i>
+                    <span class="link_name">Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-chat'></i>
+                    <span class="link_name">Messages</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-folder'></i>
+                    <span class="link_name">File Manager</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-book-bookmark'></i>
+                    <span class="link_name">Study</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">Setting</span>
+                </a>
+            </li>
 
         </ul>
-
     </div>
-
-
-    <div id="slider">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <div class="logo_content">
-                <div class="logo">
-                    <img src="./assets/img/logo/logo1.png" width="32" alt="NVD-logo">
-                    <div class="logo_name">NVD</div>
-                </div>
-                <i class="bx bx-menu" id="btn"></i>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="menu"></span>
             </div>
-            <ul class="nav-list">
-                <li>
-                    <!-- Search -->
-                    <i class='bx bx-search-alt'></i>
-                    <input type="text" placeholder="Search...">
-                    <span class="tooltip">Search</span>
-                </li>
-                <li>
-                    <!-- user -->
-                    <a href="#">
-                        <i class='bx bx-user'></i>
-                        <span class="links_name">Profile</span>
-                    </a>
-                    <span class="tooltip">Profile</span>
-                </li>
-                <li>
-                    <!-- mess -->
-                    <a href="#">
-                        <i class='bx bx-chat'></i>
-                        <span class="links_name">Messages</span>
-                    </a>
-                    <span class="tooltip">Messages</span>
-                </li>
-                <li>
-                    <!-- file manager -->
-                    <a href="#">
-                        <i class='bx bx-folder'></i>
-                        <span class="links_name">File Manager</span>
-                    </a>
-                    <span class="tooltip">File Manager</span>
-                </li>
-                <li>
-                    <!-- study -->
-                    <a href="#">
-                        <i class='bx bx-book'></i>
-                        <span class="links_name">Study</span>
-                    </a>
-                    <span class="tooltip">Study</span>
-                </li>
-                <li>
-                    <!-- setting -->
-                    <a href="#">
-                        <i class='bx bx-cog'></i>
-                        <span class="links_name">Setting</span>
-                    </a>
-                    <span class="tooltip">Setting</span>
-                </li>
-            </ul>
-            <div class="profile_content">
-                <div class="profile">
-                    <div class="profile_details">
-                        <img src="./assets/img/profile/profile1.png" width="100" alt="profile1">
-                        <div class="name_job">
-                            <div class="name">Nhật Hào</div>
-                            <div class="job">Web Designer</div>
+            <div class="navv">
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Thiết bị điện tử</a></li>
+                    <li><a href="">Tìm kiếm việc làm</a></li>
+                    <li><a href="">Dinh dưỡng</a></li>
+                    <!-- Profile -->
+
+                </ul>
+            </div>
+            <div class="search-box">
+                <i class='bx bx-search'></i>
+                <div class="input-box">
+                    <input type="text" placeholder="Search..." class="text">
+                </div>
+            </div>
+            <div class="profile-details">
+                <img src="" alt="">
+                <span class="user_name">Nguyen Nhat Hao</span>
+                <i class='bx bxs-chevron-down'></i>
+            </div>
+        </nav>
+
+        <!-- Home-content -->
+        <div class="home-content">
+            <div class="overview-boxes">
+                <div class="box">
+                    <div class="left-side">
+                        <div class="box_topic"> Khóa học mới nhất</div>
+                        <div class="number">1,024</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Vua duoc dang tai</span>
                         </div>
                     </div>
-                    <a href=""><i class='bx bx-log-out' id="log_out"></i></a>
+                    <i class='bx bx-bulb cart'></i>
+                </div>
+                <div class="box">
+                    <div class="left-side">
+                        <div class="box_topic"> Khóa học C++</div>
+                        <div class="number">102,423</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">21/1/2022</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-bulb cart two'></i>
+                </div>
+                <div class="box">
+                    <div class="left-side">
+                        <div class="box_topic"> Khóa học C++</div>
+                        <div class="number">102,423</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">21/1/2022</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-bulb cart three'></i>
+                </div>
+                <div class="box">
+                    <div class="left-side">
+                        <div class="box_topic"> Khóa học C++</div>
+                        <div class="number">102,423</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">21/1/2022</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-bulb cart four '></i>
                 </div>
             </div>
         </div>
-        <!-- Scrip -->
-        <script>
-            let btn = document.querySelector("#btn");
-            let sidebar = document.querySelector(".sidebar");
-            let searchBtn = document.querySelector(".bx-search-alt");
-
-
-            btn.onclick = function () {
-                sidebar.classList.toggle("active");
-            }
-
-            searchBtn.onclick = function () {
-                sidebar.classList.toggle("active");
-            }
-        </script>
-        <div class="home_content">
-            <div class="banner">
-                <a href=""><img src="./assets/img/slider/slider1.jpg" alt=""></a>
-            </div>
-
-            <div class="study-course">
-                <h2>Khóa đang học</h2>
-            </div>
-
-            <div>
-                <div class="cards">
-                    <div class="card">
-                        <a href=""><img src="./assets/img/Cards/card1.jfif" alt="img-NVD" class="card-img"></a>
-
-                        <div class="card-content">
-                            <div class="card-top">
-                                <h3 class="card-title">Lập trình hướng đối tượng</h3>
-                                <div class="card-user">
-                                    <img src="./assets/img/profile/luan.jpg" alt="NVD-img" class="card-avatar">
-
-                                    <div class="card-info">
-                                        <div class="card-user-top">
-                                            <a href="https://www.facebook.com/htluan2706">
-                                                <h4 class="card-user-name">Hoàng Thế Luân</h4>
-                                            </a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-bottom">
-                                <div class="card-live"></div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="card">
-                        <a href=""><img src="./assets/img/Cards/card1.jfif" alt="img-NVD" class="card-img"></a>
-
-                        <div class="card-content">
-                            <div class="card-top">
-                                <h3 class="card-title">Làm quen với C++</h3>
-                                <div class="card-user">
-                                    <img src="./assets/img/profile/xuan.jpg" alt="NVD-img" class="card-avatar">
-
-                                    <div class="card-info">
-                                        <div class="card-user-top">
-
-                                            <a href="https://www.facebook.com/xuan.phanqui">
-                                                <h4 class="card-user-name">Phan Quý Xuân</h4>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-bottom">
-                                <div class="card-live"></div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <div class="card">
-                        <a href=""><img src="./assets/img/Cards/card1.jfif" alt="img-NVD" class="card-img"></a>
-
-                        <div class="card-content">
-                            <div class="card-top">
-                                <h3 class="card-title">SQL Sever cơ bản</h3>
-                                <div class="card-user">
-                                    <img src="./assets/img/profile/khai.jpg" alt="NVD-img" class="card-avatar">
-
-                                    <div class="card-info">
-                                        <div class="card-user-top">
-                                            <a href="https://www.facebook.com/khailm10">
-                                                <h4 class="card-user-name">Phan Ngọc Khải</h4>
-                                            </a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-bottom">
-                                <div class="card-live"></div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="card">
-                        <a href=""><img src="./assets/img/Cards/card1.jfif" alt="img-NVD" class="card-img"></a>
-
-                        <div class="card-content">
-                            <div class="card-top">
-                                <h3 class="card-title">Html, css cơ bản tới nâng cao</h3>
-                                <div class="card-user">
-                                    <img src="./assets/img/profile/khue.png" alt="NVD-img" class="card-avatar">
-
-                                    <div class="card-info">
-                                        <div class="card-user-top">
-
-                                            <a href="https://www.facebook.com/truongtuankhue">
-                                                <h4 class="card-user-name">Trương Tuấn Khuê</h4>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-bottom">
-                                <div class="card-live"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
+        
+    </section>
     <div class="footer">
-        <div>
+        <div class="content-footer">
+            <div class="info">
+                <div class="address">
+                    
+                </div>
+            </div>
         </div>
     </div>
 
-
-
+    <script src="scrip.js"></script>
 
 </body>
 
