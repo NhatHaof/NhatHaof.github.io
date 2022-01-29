@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -470,16 +472,159 @@ nav .search-box .input-box input{
     background: #ccc;
     position: relative;
     min-height: 300px;
-    border-radius: 10px;
     width: calc(100% - 60px);
     left: 60px;
     transition: all 0.5s ease;
 }
 
+.footer .content-footer{
+    padding: 50px 150px 100px 150px;
+    margin: auto;
+}
+
+
+.footer .content-footer .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-footer .top .logo-detail{
+    align-items: center;    
+    display: flex;
+}
+
+.content-footer .top .logo-detail .logo_ten{
+   padding-left: 10px;
+   align-items: center;
+   line-height: 42px;
+   font-size: 25px;
+   font-weight: 500;
+}
+
+.content-footer .top .media-icons{
+    display: flex;
+
+}
+
+.content-footer .top .media-icons a{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+/* fb */
+.top .media-icons a:nth-child(1){
+    background: #4267B2;
+}
+
+.top .media-icons a:nth-child(1):hover{
+    color: #4267B2;
+    background: #fff;
+}
+
+/* yt */
+.top .media-icons a:nth-child(2){
+    background: #FF0000;
+}
+
+.top .media-icons a:nth-child(2):hover{
+    color: #FF0000;
+    background: #fff;
+}
+
+
+/* dis */
+.top .media-icons a:nth-child(3){
+    background: #4f4dda;
+}
+
+.top .media-icons a:nth-child(3):hover{
+    color: #4f4dda;
+    background: #fff;
+}
+
+
+/* twit */
+.top .media-icons a:nth-child(4){
+    background: #1DA1F2;
+}
+
+.top .media-icons a:nth-child(4):hover{
+    color: #1DA1F2;
+    background: #fff;
+}
+
+.footer .content-footer .link-boxes{
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .content-footer .link-boxes .box-footer {
+    width: calc(100% / 3 - 30px);
+}
+
+.content-footer .link-boxes .box-footer .links_name{
+    color: rgb(48, 0, 160);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.4;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.link-boxes .box-footer .links_name::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 35px;
+    left: 0;
+    bottom: 10px;
+    background: tomato;
+}
+
+.content-footer .link-boxes .box-footer li{
+    list-style-type: none;
+}
+
+.content-footer .link-boxes .box-footer li a{
+    text-decoration: none;
+    color: #000;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sidebar.acctive ~ .footer {
     width: calc(100% - 240px);
     left: 240px;
 }
+
+
+
 
 @media (max-with: 1216px) {
     .sidebar{
